@@ -8,7 +8,7 @@ fn main() {
     // println!("{:?}", args);
 
     let config = lib::Config::new(&args).unwrap_or_else(|err| {
-        println!("failed to get arg: {}", err);
+        eprintln!("failed to get arg: {}", err);
         process::exit(1);
     });
     println!("Query {}", config.query);
@@ -16,7 +16,7 @@ fn main() {
     // println!("\n");
 
     if let Err(e) = lib::run(config) {
-        println!("application error: {}", e);
+        eprintln!("application error: {}", e);
         process::exit(1);
     }
 }

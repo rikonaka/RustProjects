@@ -26,9 +26,20 @@ mod tests {
     #[test]
     fn case_insensitive() {
         let query = "rUsT";
-        let contents = "Rust:\nsafe, fast, productive.\nPick here.\Trust me.";
-        assert_eq!(vec!["Rust:", "Trust me."], search_case_iinsensitive(query, contents));
+        let contents = "Rust:\nsafe, fast, productive.\nPick here.\nTrust me.";
+        assert_eq!(vec!["Rust:", "Trust me."], search_case_insensitive(query, contents));
     }
+}
+
+pub fn search_case_insensitive<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
+    let query = query.to_lowercase();
+    let mut results = Vec::new();
+    for line in contents.lines() {
+        if line.to_lowercase().contains(&query) {
+            results.push(line);
+        }
+    }
+    return results;
 }
 
 pub fn search<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
@@ -45,6 +56,7 @@ pub fn search<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
 pub struct Config {
     pub query: String,
     pub filename: String,
+    pub case_sensitive: bool,
 }
 
 impl Config {
@@ -54,15 +66,27 @@ impl Config {
         }
         let query = args[1].clone();
         let filename = args[2].clone();
-        return Ok(Config { query, filename });
+        let case_sensitive = if args.len() == 4 {
+            true
+        }
+        else {
+            false
+        };
+        return Ok(Config { query, filename, case_sensitive });
     }
 }
 
 pub fn run(config: Config) -> Result<(), Box<dyn Error>> {
     let contents = fs::read_to_string(config.filename)?;
-    println!("poem contents:\n{}", contents);
-    for line in search(&config.query, &contents) {
-        println!("line: {}", line);
+    // println!("poem contents:\n{}", contents);
+    let results = if config.case_sensitive {
+        search_case_insensitive(&config.query, &contents)
+    }
+    else {
+        search(&config.query, &contents)
+    };
+    for line in results {
+        println!("results: {}", line);
     }
     return Ok(());
 }
