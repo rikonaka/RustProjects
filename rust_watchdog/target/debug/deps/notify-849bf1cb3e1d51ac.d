@@ -1,0 +1,12 @@
+C:\Users\Jay\Nextcloud\Documents\Code\RustProjects\rust_as_snort\target\debug\deps\notify-849bf1cb3e1d51ac.rmeta: C:\Users\Jay\.cargo\registry\src\github.com-1ecc6299db9ec823\notify-4.0.17\src\lib.rs C:\Users\Jay\.cargo\registry\src\github.com-1ecc6299db9ec823\notify-4.0.17\src\windows.rs C:\Users\Jay\.cargo\registry\src\github.com-1ecc6299db9ec823\notify-4.0.17\src\null.rs C:\Users\Jay\.cargo\registry\src\github.com-1ecc6299db9ec823\notify-4.0.17\src\poll.rs C:\Users\Jay\.cargo\registry\src\github.com-1ecc6299db9ec823\notify-4.0.17\src\debounce\mod.rs C:\Users\Jay\.cargo\registry\src\github.com-1ecc6299db9ec823\notify-4.0.17\src\debounce\timer.rs
+
+C:\Users\Jay\Nextcloud\Documents\Code\RustProjects\rust_as_snort\target\debug\deps\libnotify-849bf1cb3e1d51ac.rlib: C:\Users\Jay\.cargo\registry\src\github.com-1ecc6299db9ec823\notify-4.0.17\src\lib.rs C:\Users\Jay\.cargo\registry\src\github.com-1ecc6299db9ec823\notify-4.0.17\src\windows.rs C:\Users\Jay\.cargo\registry\src\github.com-1ecc6299db9ec823\notify-4.0.17\src\null.rs C:\Users\Jay\.cargo\registry\src\github.com-1ecc6299db9ec823\notify-4.0.17\src\poll.rs C:\Users\Jay\.cargo\registry\src\github.com-1ecc6299db9ec823\notify-4.0.17\src\debounce\mod.rs C:\Users\Jay\.cargo\registry\src\github.com-1ecc6299db9ec823\notify-4.0.17\src\debounce\timer.rs
+
+C:\Users\Jay\Nextcloud\Documents\Code\RustProjects\rust_as_snort\target\debug\deps\notify-849bf1cb3e1d51ac.d: C:\Users\Jay\.cargo\registry\src\github.com-1ecc6299db9ec823\notify-4.0.17\src\lib.rs C:\Users\Jay\.cargo\registry\src\github.com-1ecc6299db9ec823\notify-4.0.17\src\windows.rs C:\Users\Jay\.cargo\registry\src\github.com-1ecc6299db9ec823\notify-4.0.17\src\null.rs C:\Users\Jay\.cargo\registry\src\github.com-1ecc6299db9ec823\notify-4.0.17\src\poll.rs C:\Users\Jay\.cargo\registry\src\github.com-1ecc6299db9ec823\notify-4.0.17\src\debounce\mod.rs C:\Users\Jay\.cargo\registry\src\github.com-1ecc6299db9ec823\notify-4.0.17\src\debounce\timer.rs
+
+C:\Users\Jay\.cargo\registry\src\github.com-1ecc6299db9ec823\notify-4.0.17\src\lib.rs:
+C:\Users\Jay\.cargo\registry\src\github.com-1ecc6299db9ec823\notify-4.0.17\src\windows.rs:
+C:\Users\Jay\.cargo\registry\src\github.com-1ecc6299db9ec823\notify-4.0.17\src\null.rs:
+C:\Users\Jay\.cargo\registry\src\github.com-1ecc6299db9ec823\notify-4.0.17\src\poll.rs:
+C:\Users\Jay\.cargo\registry\src\github.com-1ecc6299db9ec823\notify-4.0.17\src\debounce\mod.rs:
+C:\Users\Jay\.cargo\registry\src\github.com-1ecc6299db9ec823\notify-4.0.17\src\debounce\timer.rs:
